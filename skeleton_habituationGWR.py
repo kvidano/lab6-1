@@ -57,7 +57,7 @@ for t in range(nTs):
         v *= dec # decrement weight
         
     if t>3 and sum(x[t-4:t])==0 and v<stv and forgetflag:
-        v += (stv-v) * 0.5 #forget this association we just learned
+        v += (stv-v) * 0.05 #forget this association we just learned
                           # if it doesn't happen for a while
             
 
